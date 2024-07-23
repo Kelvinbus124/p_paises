@@ -1,0 +1,2 @@
+ //const rpaises = {nombre:pais, capital: capital, poblacion:poblacion, idioma:idioma, moneda:moneda}
+       // setPais([...pais, rpaises])
