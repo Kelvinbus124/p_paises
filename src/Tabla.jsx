@@ -14,6 +14,10 @@ const Tabla = () => {
       setPaises(PaisEliminado)
     }
 
+    const editar = () => {
+      
+    }
+
   return (
     <>
     <table className="table table-striped">
@@ -37,6 +41,7 @@ const Tabla = () => {
                       <td>{p.datos.idioma}</td>
                       <td>{p.datos.moneda}</td>
                       <td><button className='btn btn-danger' onClick={eliminar} value={p.id}>Eliminar</button></td>
+                      <td><button className='btn btn-primary' onClick={editar} value={p.id}>Editar</button></td>
                     </tr>
                   ))
                 }
