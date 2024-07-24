@@ -16,7 +16,6 @@ const Inicio = () => {
     }, [])
   return (
     <div className="container">
-        <div>Inicio</div>
           <Router>
             <ul>
                 <li>
