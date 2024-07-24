@@ -14,6 +14,7 @@ const Inicio = () => {
             localStorage.setItem("paises", JSON.stringify(data))
         })
     }, [])
+    
   return (
     <div className="container">
         <h4>Seleccione una opción</h4>

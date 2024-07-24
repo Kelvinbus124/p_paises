@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import Editar from './Editar'
+import { Link, Route, Router, Routes } from 'react-router-dom'
+
 
 const Tabla = () => {
     const [paises, setPaises] = useState([])
@@ -12,10 +15,6 @@ const Tabla = () => {
       const PaisEliminado=ListaPais.filter(p => p.id != e.target.value)
       localStorage.setItem("paises",JSON.stringify(PaisEliminado))
       setPaises(PaisEliminado)
-    }
-
-    const editar = () => {
-      
     }
 
   return (
@@ -41,7 +40,7 @@ const Tabla = () => {
                       <td>{p.datos.idioma}</td>
                       <td>{p.datos.moneda}</td>
                       <td><button className='btn btn-danger' onClick={eliminar} value={p.id}>Eliminar</button></td>
-                      <td><button className='btn btn-primary' onClick={editar} value={p.id}>Editar</button></td>
+                      <td><button className='btn btn-primary'>Editar</button></td>
                     </tr>
                   ))
                 }
